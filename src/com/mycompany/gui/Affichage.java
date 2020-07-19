@@ -7,7 +7,7 @@ package com.mycompany.gui;
 
 import com.codename1.components.SpanLabel;
 import com.codename1.ui.Form;
-import com.mycompany.Service.ServiceTask;
+import com.mycompany.Service.*;
 
 /**
  *

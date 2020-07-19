@@ -10,8 +10,8 @@ import com.codename1.ui.Form;
 import com.codename1.ui.Label;
 import com.codename1.ui.TextField;
 import com.codename1.ui.layouts.BoxLayout;
-import com.mycompany.Entite.Utilisateur_Malade;
-import com.mycompany.Service.Inscription_Malade;
+import com.mycompany.Entite.*;
+import com.mycompany.Service.*;
 
 /**
  *

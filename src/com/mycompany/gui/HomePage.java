@@ -46,7 +46,10 @@ public class HomePage {
             
 
         });
-        
+        bt3.addActionListener((e) -> {
+            QuizGUI quizGUI = new QuizGUI();
+            quizGUI.getQuizGUI().show();
+        });
         
      
     }

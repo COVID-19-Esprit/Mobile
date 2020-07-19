@@ -8,8 +8,8 @@ package com.mycompany.gui;
 import com.codename1.ui.Button;
 import com.codename1.ui.Form;
 import com.codename1.ui.TextField;
-import com.mycompany.Service.ServiceTask;
-import com.mycompany.Entite.Task;
+import com.mycompany.Service.*;
+import com.mycompany.Entite.*;
 
 /**
  *
