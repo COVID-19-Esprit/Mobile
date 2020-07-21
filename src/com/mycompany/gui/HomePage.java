@@ -38,6 +38,11 @@ public class HomePage {
         f.add(bt3);
         f.add(bt4);
         f.add(bt5);
+
+        bt4.addActionListener((e)-> {
+            statistic stat = new statistic(f);
+            stat.getStatisicGUI().show();
+        });
         
         bt5.addActionListener((e) -> {
             Login a = new Login();
