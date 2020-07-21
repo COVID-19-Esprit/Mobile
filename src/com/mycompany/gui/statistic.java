@@ -113,13 +113,6 @@ public class statistic {
         });
 
 
-
-
-
-
-
-
-
         statisticGUI.addComponent(tc);
         statisticGUI.addComponent(dpm);
         statisticGUI.addComponent(active);
