@@ -3,6 +3,17 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/1"/>
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+<<<<<<< HEAD
         <group/>
+=======
+        <group>
+            <file>file:/C:/Users/Achref/Desktop/CovidMobile/src/com/mycompany/gui/Affichage.java</file>
+            <file>file:/C:/Users/Achref/Desktop/CovidMobile/src/com/mycompany/gui/HomePage.java</file>
+            <file>file:/C:/Users/Achref/Desktop/CovidMobile/src/com/mycompany/gui/ChoixUtilisateur.java</file>
+            <file>file:/C:/Users/Achref/Desktop/CovidMobile/src/com/mycompany/gui/SignUp.java</file>
+            <file>file:/C:/Users/Achref/Desktop/CovidMobile/src/com/mycompany/gui/Login.java</file>
+            <file>file:/C:/Users/Achref/Desktop/CovidMobile/src/com/mycompany/gui/TestAchref.java</file>
+        </group>
+>>>>>>> 4030e2335fcfb6c6cb81572250a3f45d57507585
     </open-files>
 </project-private>

@@ -21,21 +21,29 @@ import com.mycompany.Entite.Utilisateur_Malade;
  * @author Achref
  */
 public class Inscription_Malade {
-    
-     
-     public void ajouterMalade(Utilisateur_Malade m)
-    { ConnectionRequest con = new ConnectionRequest(); //crrer connection request equiavlent dans java statement 
-     String Url="http://localhost:3308/covid_database/addMalade.php/"+ m.getNomMalade()+ "/" + m.getPrenomMalade()+ "/" + m.getAgeMalade()+ "/" + m.getAdresseMalade()+ "/" + m.getTelephoneMalade()+ "/" + m.getMailMalade()+ "/" + m.getCode();// création de l'URL
+
+
+    public void ajouterMalade(Utilisateur_Malade m)
+    { ConnectionRequest con = new ConnectionRequest(); //crrer connection request equiavlent dans java statement
+
+
+        String Url="http://localhost/covid_database/addMalade.php?" + "nomMalade=" + m.getNomMalade()+
+                "&prenomMalade=" + m.getPrenomMalade()+ "&ageMalade=" + m.getAgeMalade()+
+                "&adresseMalade=" + m.getAdresseMalade()+ "&telephoneMalade=" +
+                m.getTelephoneMalade()+ "&mailMalade=" + m.getMailMalade()+ "&code=" +
+                m.getCode();// création de l'URL
+
+
         con.setUrl(Url);// Insertion de l'URL de notre demande de connexion
         con.setPost(false);
-      con.addResponseListener((e) -> {
+        con.addResponseListener((e) -> {
             String str = new String(con.getResponseData());//Récupération de la réponse du serveur
             System.out.println(str);//Affichage de la réponse serveur sur la console
 
         });
         NetworkManager.getInstance().addToQueueAndWait(con);// Ajout de notre demande de connexion à la file d'attente du NetworkManager
     }
-     
-   
+
+
 
 }

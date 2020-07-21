@@ -14,14 +14,20 @@ import com.codename1.ui.RadioButton;
 import com.codename1.ui.layouts.BoxLayout;
 import com.codename1.ui.layouts.FlowLayout;
 
+import java.io.IOException;
+
+
+
 /**
  *
  * @author Achref
  */
 public class HomePage {
     
+
  Form f;
-    
+ 
+
     SpanButton  bt1,bt2,bt3,bt4,bt5;
     Label lb;
 
@@ -30,7 +36,10 @@ public class HomePage {
         bt1 = new SpanButton("What Is Covid-19 ?");
         bt2=new SpanButton("Protect Yourself From Covid-19 ");
          bt3 = new SpanButton("Quiz Test Covid-19");
-          bt4 = new SpanButton("Latest news");
+
+
+          bt4 = new SpanButton("Statistique");
+
            bt5 = new SpanButton("Order");
            
         f.add(bt1);
@@ -39,22 +48,22 @@ public class HomePage {
         f.add(bt4);
         f.add(bt5);
 
-        bt4.addActionListener((e)-> {
-            statistic stat = new statistic(f);
-            stat.getStatisicGUI().show();
-        });
-        
         bt5.addActionListener((e) -> {
-            Login a = new Login();
-           a.getLogin().show();
+            ChoixUtilisateur a = new ChoixUtilisateur();
+           a.getChoixUtilisateur().show();});
+        
+           bt3.addActionListener((e) -> {
+            QuizGUI a = new QuizGUI(f);
+           a.getQuizGUI().show();});
+        
+          bt4.addActionListener((e) -> {
+            try {
+                statistic b = new statistic();
+                b.getstatistic().show();
+            } catch (IOException ex) {
+                System.out.println(ex.getMessage());            }
+         });
 
-            
-
-        });
-        bt3.addActionListener((e) -> {
-            QuizGUI quizGUI = new QuizGUI(f);
-            quizGUI.getQuizGUI().show();
-        });
         
      
     }
