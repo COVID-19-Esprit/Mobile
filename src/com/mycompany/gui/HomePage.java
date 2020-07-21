@@ -47,7 +47,7 @@ public class HomePage {
 
         });
         bt3.addActionListener((e) -> {
-            QuizGUI quizGUI = new QuizGUI();
+            QuizGUI quizGUI = new QuizGUI(f);
             quizGUI.getQuizGUI().show();
         });
         
