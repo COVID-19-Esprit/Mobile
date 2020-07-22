@@ -57,11 +57,10 @@ public class HomePage {
            a.getQuizGUI().show();});
         
           bt4.addActionListener((e) -> {
-            try {
-                statistic b = new statistic();
-                b.getstatistic().show();
-            } catch (IOException ex) {
-                System.out.println(ex.getMessage());            }
+
+                statistic b = new statistic(f);
+                b.getStatisicGUI().show();
+
          });
 
         
